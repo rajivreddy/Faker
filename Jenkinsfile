@@ -7,4 +7,9 @@ node {
     sh 'ls -lthr'
   stage 'Running unit test cases'
    		sh './vendor/bin/phpunit'
+  post {
+  always {
+    junit "./tmp/log-junit.xml"
+  }
+}
 }

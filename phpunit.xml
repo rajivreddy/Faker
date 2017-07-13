@@ -17,7 +17,7 @@
 </filter>
     <logging>
   <log type="json" target="./tmp/report/logfile.json"/>
-     
+  <log type="junit" target="./tmp/log-junit.xml"/>
   <log type="coverage-clover" target="./tmp/coverage.xml"/>
 </logging>
 </phpunit>
